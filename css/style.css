@@ -1,4 +1,3 @@
-```css
 /* ==========================================
    1. CONFIGURACIÓN GENERAL
    ========================================== */
@@ -133,4 +132,31 @@ article p {
 
 
 }
+```css
+/* ==========================================
+   8. ESTILOS DE LOS ENLACES DE CONTACTO
+   ========================================== */
+
+/* Personalizamos los enlaces del apartado de contacto */
+.enlace-contacto {
+    color: var(--color-texto-secundario);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el ratón por los enlaces */
+.enlace-contacto:hover {
+    color: var(--color-principal);
+    text-decoration: underline;
+}
+
+/* Destacamos el apartado de contacto */
+.contacto {
+    background-color: rgba(168, 85, 247, 0.08);
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
 
