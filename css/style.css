@@ -1,0 +1,75 @@
+```css
+/* ==========================================
+   1. CONFIGURACIÓN GENERAL
+   ========================================== */
+
+/* Eliminamos los márgenes y espacios predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definimos los colores principales de la página */
+:root {
+    --color-fondo: #0b0b12;
+    --color-secundario: #151522;
+    --color-principal: #a855f7;
+    --color-texto: #ffffff;
+    --color-texto-secundario: #b8b8c7;
+}
+
+/* Estilos generales del documento */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   2. CONTENEDOR PRINCIPAL
+   ========================================== */
+
+/* Personalizamos el espacio principal de la página */
+.contenedor-principal {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* ==========================================
+   3. TARJETA DE PRESENTACIÓN
+   ========================================== */
+
+/* Diseño de la tarjeta donde estará nuestra carta */
+.tarjeta-presentacion {
+    background-color: var(--color-secundario);
+    max-width: 850px;
+    width: 100%;
+    padding: 50px;
+    border-radius: 20px;
+    border: 1px solid #29293a;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Color personalizado para destacar palabras */
+.text-purple {
+    color: var(--color-principal);
+}
+
+/* ==========================================
+   4. DISEÑO ADAPTABLE A MÓVILES
+   ========================================== */
+
+/* Ajustamos la tarjeta cuando la pantalla es pequeña */
+@media (max-width: 576px) {
+
+    .tarjeta-presentacion {
+        padding: 25px;
+    }
+
+}
+```
