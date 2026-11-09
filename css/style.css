@@ -189,4 +189,48 @@ article p {
     margin-bottom: 0;
 }
 
+/* ==========================================
+   10. ESTILOS PARA IMPRIMIR LA CARTA EN PDF
+   ========================================== */
+
+/* Estos estilos solo se aplican al imprimir o guardar como PDF */
+@media print {
+
+    /* Configuramos el fondo y el color general del documento */
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    /* Eliminamos los elementos que no necesitamos en el PDF */
+    button,
+    .btn {
+        display: none !important;
+    }
+
+    /* Quitamos el fondo oscuro de la tarjeta */
+    .contenedor-principal,
+    .tarjeta-presentacion {
+        background: white !important;
+        color: black !important;
+        box-shadow: none !important;
+        border: none !important;
+    }
+
+    /* Cambiamos los textos a color oscuro para facilitar la lectura */
+    .tarjeta-presentacion p,
+    .tarjeta-presentacion h1,
+    .tarjeta-presentacion h2,
+    .tarjeta-presentacion h3,
+    .tarjeta-presentacion h4 {
+        color: black !important;
+    }
+
+    /* Ocultamos los efectos de los enlaces al imprimir */
+    a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+}
+
 
